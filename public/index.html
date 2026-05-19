@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Construido por Automatiza.ia — https://automatiza.ia -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Automatiza.ia">
+  <meta name="generator" content="Automatiza.ia">
+  <title>Automatiza.ia · FX Rates Público (USD base)</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
+      background: hsl(240 10% 4%);
+      color: hsl(0 0% 95%);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      line-height: 1.6;
+    }
+    h1 { font-size: 28px; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .sub { color: hsl(240 5% 55%); margin-bottom: 32px; }
+    .card {
+      background: hsl(240 8% 9%);
+      border: 1px solid hsl(240 6% 18%);
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-bottom: 20px;
+    }
+    code, pre {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 13px;
+      background: hsl(240 6% 14%);
+      color: hsl(262 80% 75%);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    pre { padding: 16px; overflow-x: auto; line-height: 1.5; white-space: pre; }
+    a { color: hsl(262 80% 70%); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid hsl(240 6% 18%); }
+    th { color: hsl(240 5% 55%); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid hsl(240 6% 18%); color: hsl(240 5% 45%); font-size: 13px; }
+  </style>
+</head>
+<body data-build="automatiza-ia">
+  <h1>Automatiza.ia · FX Rates Público</h1>
+  <p class="sub">Tipos de cambio diarios (USD base) servidos como JSON estático · uso interno cross-project.</p>
+
+  <div class="card">
+    <strong>Endpoint principal:</strong>
+    <pre>https://pctechnologyxela-tech.github.io/automatiza-fx-public/fx/latest.json</pre>
+    <p style="margin-top:12px;font-size:14px;color:hsl(240 5% 70%);">
+      JSON con <strong>18 monedas</strong> (USD base · 16 LATAM + EUR/GBP) · actualizado diariamente vía GitHub Action a las 00:30 UTC.
+    </p>
+  </div>
+
+  <div class="card">
+    <strong>Histórico (90 días retroactivo):</strong>
+    <pre>https://pctechnologyxela-tech.github.io/automatiza-fx-public/fx/history/YYYY-MM-DD.json</pre>
+    <p style="margin-top:12px;font-size:14px;color:hsl(240 5% 70%);">
+      Ejemplo: <code>history/2026-05-19.json</code>
+    </p>
+  </div>
+
+  <div class="card">
+    <strong>Monedas soportadas:</strong>
+    <table>
+      <thead><tr><th>Código</th><th>Nombre</th><th>Símbolo</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td>Dólar estadounidense</td><td>$</td></tr>
+        <tr><td>GTQ</td><td>Quetzal guatemalteco</td><td>Q</td></tr>
+        <tr><td>MXN</td><td>Peso mexicano</td><td>MX$</td></tr>
+        <tr><td>HNL</td><td>Lempira hondureño</td><td>L</td></tr>
+        <tr><td>NIO</td><td>Córdoba nicaragüense</td><td>C$</td></tr>
+        <tr><td>CRC</td><td>Colón costarricense</td><td>₡</td></tr>
+        <tr><td>COP</td><td>Peso colombiano</td><td>COL$</td></tr>
+        <tr><td>PEN</td><td>Sol peruano</td><td>S/</td></tr>
+        <tr><td>CLP</td><td>Peso chileno</td><td>CLP$</td></tr>
+        <tr><td>ARS</td><td>Peso argentino (oficial · alta volatilidad)</td><td>AR$</td></tr>
+        <tr><td>BOB</td><td>Boliviano</td><td>Bs</td></tr>
+        <tr><td>UYU</td><td>Peso uruguayo</td><td>UY$</td></tr>
+        <tr><td>PYG</td><td>Guaraní paraguayo</td><td>₲</td></tr>
+        <tr><td>BRL</td><td>Real brasileño</td><td>R$</td></tr>
+        <tr><td>DOP</td><td>Peso dominicano</td><td>RD$</td></tr>
+        <tr><td>VES</td><td>Bolívar venezolano (oficial · alta volatilidad)</td><td>Bs.S</td></tr>
+        <tr><td>EUR</td><td>Euro</td><td>€</td></tr>
+        <tr><td>GBP</td><td>Libra esterlina</td><td>£</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <strong>Fuente:</strong>
+    <p style="font-size:14px;color:hsl(240 5% 70%);">
+      <a href="https://www.exchangerate-api.com/" target="_blank" rel="noopener">ExchangeRate-API.com</a> · free tier público sin API key · <a href="https://www.exchangerate-api.com/terms" target="_blank" rel="noopener">términos de uso</a>.
+    </p>
+  </div>
+
+  <div class="footer">
+    Construido por <strong><a href="https://automatiza.ia">Automatiza.ia</a></strong> — agencia de investigación, diseño y automatización con IA.<br>
+    Repo: <a href="https://github.com/pctechnologyxela-tech/automatiza-fx-public">pctechnologyxela-tech/automatiza-fx-public</a>
+  </div>
+</body>
+</html>

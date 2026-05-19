@@ -1,0 +1,57 @@
+# Construido por Automatiza.ia — https://automatiza.ia
+# Cron diario que actualiza fx.json desde ExchangeRate-API.com
+name: Update FX rates
+
+on:
+  schedule:
+    # 00:30 UTC diario (ExchangeRate-API publica nuevo rate ~00:00-00:25 UTC)
+    - cron: '30 0 * * *'
+  workflow_dispatch:  # permite trigger manual desde Actions UI
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-fx
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch FX rates
+        run: node scripts/fetch-fx.js
+
+      - name: Commit if changed
+        run: |
+          git config user.name "automatiza-fx-bot"
+          git config user.email "bot@automatiza.ia"
+          git add public/fx/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
+            git commit -m "fx: update rates ($DATE)"
+            git push
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,200 @@
+{
+  "base": "USD",
+  "as_of": "Tue, 19 May 2026 00:02:31 +0000",
+  "as_of_unix": 1779148951,
+  "next_update_utc": "Wed, 20 May 2026 00:25:01 +0000",
+  "next_update_unix": 1779236701,
+  "source": "exchangerate-api.com",
+  "source_terms": "https://www.exchangerate-api.com/terms",
+  "license_attribution": "Rates by exchangerate-api.com (free tier)",
+  "generated_at": "2026-05-19T15:07:34.229Z",
+  "generator": "Automatiza.ia · automatiza-fx-public",
+  "supported": [
+    "USD",
+    "GTQ",
+    "MXN",
+    "HNL",
+    "NIO",
+    "CRC",
+    "COP",
+    "PEN",
+    "CLP",
+    "ARS",
+    "BOB",
+    "UYU",
+    "PYG",
+    "BRL",
+    "DOP",
+    "VES",
+    "EUR",
+    "GBP"
+  ],
+  "high_volatility": [
+    "ARS",
+    "VES"
+  ],
+  "rates": {
+    "USD": 1,
+    "GTQ": 7.620767,
+    "MXN": 17.279114,
+    "HNL": 26.579591,
+    "NIO": 36.760038,
+    "CRC": 454.933837,
+    "COP": 3791.187663,
+    "PEN": 3.43036,
+    "CLP": 908.691285,
+    "ARS": 1394.974,
+    "BOB": 6.928568,
+    "UYU": 40.066811,
+    "PYG": 6104.180848,
+    "BRL": 5.043297,
+    "DOP": 59.535162,
+    "VES": 517.9619,
+    "EUR": 0.858442,
+    "GBP": 0.745609
+  },
+  "symbols": {
+    "USD": "$",
+    "GTQ": "Q",
+    "MXN": "MX$",
+    "HNL": "L",
+    "NIO": "C$",
+    "CRC": "₡",
+    "COP": "COL$",
+    "PEN": "S/",
+    "CLP": "CLP$",
+    "ARS": "AR$",
+    "BOB": "Bs",
+    "UYU": "UY$",
+    "PYG": "₲",
+    "BRL": "R$",
+    "DOP": "RD$",
+    "VES": "Bs.S",
+    "EUR": "€",
+    "GBP": "£"
+  },
+  "names": {
+    "USD": "Dólar estadounidense",
+    "GTQ": "Quetzal guatemalteco",
+    "MXN": "Peso mexicano",
+    "HNL": "Lempira hondureño",
+    "NIO": "Córdoba nicaragüense",
+    "CRC": "Colón costarricense",
+    "COP": "Peso colombiano",
+    "PEN": "Sol peruano",
+    "CLP": "Peso chileno",
+    "ARS": "Peso argentino (oficial)",
+    "BOB": "Boliviano",
+    "UYU": "Peso uruguayo",
+    "PYG": "Guaraní paraguayo",
+    "BRL": "Real brasileño",
+    "DOP": "Peso dominicano",
+    "VES": "Bolívar venezolano (oficial)",
+    "EUR": "Euro",
+    "GBP": "Libra esterlina"
+  },
+  "country_to_currency": {
+    "GT": "GTQ",
+    "MX": "MXN",
+    "HN": "HNL",
+    "NI": "NIO",
+    "CR": "CRC",
+    "CO": "COP",
+    "PE": "PEN",
+    "CL": "CLP",
+    "AR": "ARS",
+    "BO": "BOB",
+    "UY": "UYU",
+    "PY": "PYG",
+    "BR": "BRL",
+    "DO": "DOP",
+    "VE": "VES",
+    "EC": "USD",
+    "SV": "USD",
+    "PA": "USD",
+    "PR": "USD",
+    "US": "USD",
+    "CA": "USD",
+    "ES": "EUR",
+    "FR": "EUR",
+    "DE": "EUR",
+    "IT": "EUR",
+    "PT": "EUR",
+    "GB": "GBP",
+    "default": "USD"
+  },
+  "rounding": {
+    "USD": {
+      "decimals": 2,
+      "step": 0.01
+    },
+    "EUR": {
+      "decimals": 2,
+      "step": 0.01
+    },
+    "GBP": {
+      "decimals": 2,
+      "step": 0.01
+    },
+    "GTQ": {
+      "decimals": 0,
+      "step": 1
+    },
+    "MXN": {
+      "decimals": 0,
+      "step": 1
+    },
+    "HNL": {
+      "decimals": 0,
+      "step": 1
+    },
+    "NIO": {
+      "decimals": 0,
+      "step": 1
+    },
+    "CRC": {
+      "decimals": 0,
+      "step": 50
+    },
+    "COP": {
+      "decimals": 0,
+      "step": 100
+    },
+    "PEN": {
+      "decimals": 2,
+      "step": 0.01
+    },
+    "CLP": {
+      "decimals": 0,
+      "step": 50
+    },
+    "ARS": {
+      "decimals": 0,
+      "step": 100
+    },
+    "BOB": {
+      "decimals": 0,
+      "step": 1
+    },
+    "UYU": {
+      "decimals": 0,
+      "step": 1
+    },
+    "PYG": {
+      "decimals": 0,
+      "step": 100
+    },
+    "BRL": {
+      "decimals": 2,
+      "step": 0.01
+    },
+    "DOP": {
+      "decimals": 0,
+      "step": 1
+    },
+    "VES": {
+      "decimals": 2,
+      "step": 0.01
+    }
+  }
+}
